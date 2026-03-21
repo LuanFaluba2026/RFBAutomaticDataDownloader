@@ -482,4 +482,4 @@ $RECYCLE.BIN/
 *.swp
 
 #Decompressed big file
-*.D60314
+decompressed/
