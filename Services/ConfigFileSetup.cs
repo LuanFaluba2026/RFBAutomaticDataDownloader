@@ -1,25 +1,23 @@
 using System.Text.Json;
+using RFBAutomaticDataDownloader.Helpers;
 
-namespace RFBAutomaticDataDownloader.Helpers;
+namespace RFBAutomaticDataDownloader.Services;
 
 public static class ConfigFileSetup
 {
-    public static SetupResult SetupConfig(string basePath, out Config config)
+    public static SetupResult SetupConfig(out Config config)
     {
         //return base predefinition.
         config = new Config();
 
-        string configFilePath = Path.Combine(basePath, "Config");
+        string configFilePath = DirectoryHelper.CreateBaseDirectory("config");
         string fileName = Path.Combine(configFilePath, "config.json");
-        if(!Directory.Exists(configFilePath))
+        if(!File.Exists(fileName))
         {
-            Directory.CreateDirectory(configFilePath);
             using var file = File.Create(fileName);
             SetupFile(file);
             return SetupResult.SETUP;
         }
-        if(!File.Exists(fileName)) return SetupResult.ERROR;
-
         var json = File.ReadAllText(fileName);
         if(json.Length == 0) return SetupResult.ERROR;
         config = JsonSerializer.Deserialize<Config>(json)!;

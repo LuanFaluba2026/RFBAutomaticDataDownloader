@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RFBAutomaticDataDownloader")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df6cff65a21a4ac58d302417f9dd2ddbc0528cfb")]
 [assembly: System.Reflection.AssemblyProductAttribute("RFBAutomaticDataDownloader")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RFBAutomaticDataDownloader")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

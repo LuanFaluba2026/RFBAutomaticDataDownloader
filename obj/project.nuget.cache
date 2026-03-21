@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PBg7QzcN8Ic=",
+  "dgSpecHash": "3DlFvPlG0Ro=",
   "success": true,
-  "projectFilePath": "D:\\RFBAutomaticDataDownloader\\RFBAutomaticDataDownloader.csproj",
+  "projectFilePath": "d:\\RFBAutomaticDataDownloader\\RFBAutomaticDataDownloader.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\secun\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
     "C:\\Users\\secun\\.nuget\\packages\\taskscheduler\\2.12.2\\taskscheduler.2.12.2.nupkg.sha512"

@@ -29,3 +29,4 @@ d:\RFBAutomaticDataDownloader\bin\Debug\net10.0\runtimes\win\lib\net6.0\System.D
 d:\RFBAutomaticDataDownloader\bin\Debug\net10.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll
 d:\RFBAutomaticDataDownloader\obj\Debug\net10.0\RFBAutomaticDataDownloader.csproj.AssemblyReference.cache
 D:\RFBAutomaticDataDownloader\obj\Debug\net10.0\RFBAutom.3BD42763.Up2Date
+d:\RFBAutomaticDataDownloader\obj\Debug\net10.0\RFBAutomaticDataDownloader.sourcelink.json

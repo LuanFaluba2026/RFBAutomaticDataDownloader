@@ -1,4 +1,4 @@
 {
-  "OutputPath": "C:\\",
-  "AppDirectory": "D:\\RFBAutomaticDataDownloader\\bin\\Debug\\net10.0\\RFBAutomaticDataDownloader.exe"
+  "AppDirectory": "D:\\RFBAutomaticDataDownloader\\bin\\Debug\\net10.0\\RFBAutomaticDataDownloader.exe",
+  "ScheduleMonthlyDownload": false
 }
