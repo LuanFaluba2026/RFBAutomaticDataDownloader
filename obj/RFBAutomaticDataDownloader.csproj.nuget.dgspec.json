@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\RFBAutomaticDataDownloader\\RFBAutomaticDataDownloader.csproj": {}
+    "D:\\RFBAutomaticDataDownloader\\RFBAutomaticDataDownloader.csproj": {}
   },
   "projects": {
-    "d:\\RFBAutomaticDataDownloader\\RFBAutomaticDataDownloader.csproj": {
+    "D:\\RFBAutomaticDataDownloader\\RFBAutomaticDataDownloader.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\RFBAutomaticDataDownloader\\RFBAutomaticDataDownloader.csproj",
+        "projectUniqueName": "D:\\RFBAutomaticDataDownloader\\RFBAutomaticDataDownloader.csproj",
         "projectName": "RFBAutomaticDataDownloader",
-        "projectPath": "d:\\RFBAutomaticDataDownloader\\RFBAutomaticDataDownloader.csproj",
+        "projectPath": "D:\\RFBAutomaticDataDownloader\\RFBAutomaticDataDownloader.csproj",
         "packagesPath": "C:\\Users\\secun\\.nuget\\packages\\",
-        "outputPath": "d:\\RFBAutomaticDataDownloader\\obj\\",
+        "outputPath": "D:\\RFBAutomaticDataDownloader\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\secun\\AppData\\Roaming\\NuGet\\NuGet.Config",
