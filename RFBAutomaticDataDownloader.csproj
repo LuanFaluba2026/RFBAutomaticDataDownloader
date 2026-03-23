@@ -5,9 +5,11 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <AppManifest>app.manifest</AppManifest>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.119" />
     <PackageReference Include="TaskScheduler" Version="2.12.2" />
   </ItemGroup>
 </Project>

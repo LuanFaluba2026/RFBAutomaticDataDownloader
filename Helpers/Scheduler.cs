@@ -16,7 +16,7 @@ public class Scheduler()
             MonthsOfYear = MonthsOfTheYear.AllMonths,
             StartBoundary = DateTime.Today.AddHours(13)
         });
-        td.Actions.Add(new ExecAction(Program.AppConfig.AppDirectory, null, null));
+        td.Actions.Add(new ExecAction(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "RFBAutomaticDataDownloader.exe"), null, null));
         ts.RootFolder.RegisterTaskDefinition("RFBAutomaticDataDownloader", td, TaskCreation.CreateOrUpdate, null, null, TaskLogonType.InteractiveToken);
     }
 }
