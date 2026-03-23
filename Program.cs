@@ -32,7 +32,7 @@ public class Program
         if(AppConfig.ScheduleMonthlyDownload) Scheduler.SetupSchedule();
         
         Console.WriteLine("Iniciando o Download...");
-        string downloadedFile = await WebDownloader.DownloadFile("2026-03/Simples.zip");
+        string downloadedFile = await WebDownloader.DownloadFile(await WebDownloader.GetUrl());
         if(!File.Exists(downloadedFile))
         {
             Console.WriteLine("Nenhum arquivo foi baixado.");
