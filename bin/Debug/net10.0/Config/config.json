@@ -1,5 +1,6 @@
 {
   "ScheduleMonthlyDownload": false,
+  "DatabasePath": "C:\\XML\\",
   "FileName": "Simples.zip",
-  "DatabasePath": "D:\\"
+  "OnlyParse": true
 }

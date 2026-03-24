@@ -33,24 +33,41 @@ public class Program
         {
             Scheduler.SetupSchedule();
             Logger.CreateLog(LogType.Sucesso, "Criou uma tarefa mensal sno windows");
-        } 
-        Logger.CreateLog(LogType.Sucesso, "Download iniciado...");
-        string downloadedFile = await WebDownloader.DownloadFile(await WebDownloader.GetUrl(), AppConfig.FileName);
-        if(!File.Exists(downloadedFile))
-        {
-            Logger.CreateLog(LogType.Erro, "Nenhum arquivo foi baixado.");
-            return;
         }
-        Logger.CreateLog(LogType.Sucesso, "Download Completo.");
-        
-        Logger.CreateLog(LogType.Sucesso, "Extraindo arquivo...");
-        using var extractor = new Decompresser();
-        string decompressed = extractor.Decompress(downloadedFile);
-        Logger.CreateLog(LogType.Sucesso, "Extração completa.");
+        if(!AppConfig.OnlyParse)
+        {
+            Logger.CreateLog(LogType.Sucesso, "Download iniciado...");
+            string downloadedFile = await WebDownloader.DownloadFile(await WebDownloader.GetUrl(), AppConfig.FileName);
+            if(!File.Exists(downloadedFile))
+            {
+                Logger.CreateLog(LogType.Erro, "Nenhum arquivo foi baixado.");
+                return;
+            }
+            Logger.CreateLog(LogType.Sucesso, "Download Completo.");
+            
+            Logger.CreateLog(LogType.Sucesso, "Extraindo arquivo...");
+            using var extractor = new Decompresser();
+            string decompressed = extractor.Decompress(downloadedFile);
+            Logger.CreateLog(LogType.Sucesso, "Extração completa.");
 
-        Logger.CreateLog(LogType.Sucesso, "Criando Banco de Dados.");
-        DbManager.ParseDatabase(decompressed);
-        Logger.CreateLog(LogType.Sucesso, "Banco de Dados criado com sucesso.");
+            Logger.CreateLog(LogType.Sucesso, "Criando Banco de Dados.");
+            DbManager.ParseDatabase(decompressed);
+            Logger.CreateLog(LogType.Sucesso, "Banco de Dados criado com sucesso.");
+            File.Delete(downloadedFile);
+
+            Logger.CreateLog(LogType.Sucesso, "Processo concluído.");
+        }
+        else
+        {
+            Logger.CreateLog(LogType.Sucesso, "Extraindo arquivo...");
+            using var extractor = new Decompresser();
+            string decompressed = extractor.Decompress(Path.Combine(AppConfig.DatabasePath, AppConfig.FileName));
+            Logger.CreateLog(LogType.Sucesso, "Extração completa.");
+
+            Logger.CreateLog(LogType.Sucesso, "Criando Banco de Dados.");
+            DbManager.ParseDatabase(decompressed);
+            Logger.CreateLog(LogType.Sucesso, "Banco de Dados criado com sucesso.");
+        }
     }
     
 }

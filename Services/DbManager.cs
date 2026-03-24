@@ -15,8 +15,9 @@ public class DbManager
     {
         try
         {
-            if(!File.Exists(dbPath)) SQLiteConnection.CreateFile(dbPath);
+            if(File.Exists(dbPath)) File.Delete(dbPath);
 
+            SQLiteConnection.CreateFile(dbPath);
             using var conn = Connection();
             using var cmd = conn.CreateCommand();
             cmd.CommandText = "CREATE TABLE IF NOT EXISTS TabelaSimplesNacional (CnpjBasico TEXT, OpcaoSimples TEXT, OpcaoMei TEXT)";
