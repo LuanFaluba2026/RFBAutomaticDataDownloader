@@ -1,17 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "k4ZQPBfZ26U=",
+  "dgSpecHash": "Z7yOeV0yBIo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\luan\\Documents\\Desenvolvimento Aplicativos\\RFBAutomaticDataDownloader\\RFBAutomaticDataDownloader.csproj",
+  "projectFilePath": "D:\\RFBAutomaticDataDownloader\\RFBAutomaticDataDownloader.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\luan\\.nuget\\packages\\microsoft.net.illink.tasks\\10.0.4\\microsoft.net.illink.tasks.10.0.4.nupkg.sha512",
-    "C:\\Users\\luan\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.119\\stub.system.data.sqlite.core.netstandard.1.0.119.nupkg.sha512",
-    "C:\\Users\\luan\\.nuget\\packages\\system.data.sqlite.core\\1.0.119\\system.data.sqlite.core.1.0.119.nupkg.sha512",
-    "C:\\Users\\luan\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
-    "C:\\Users\\luan\\.nuget\\packages\\taskscheduler\\2.12.2\\taskscheduler.2.12.2.nupkg.sha512",
-    "C:\\Users\\luan\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\10.0.4\\microsoft.netcore.app.runtime.win-x64.10.0.4.nupkg.sha512",
-    "C:\\Users\\luan\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\10.0.4\\microsoft.windowsdesktop.app.runtime.win-x64.10.0.4.nupkg.sha512",
-    "C:\\Users\\luan\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\10.0.4\\microsoft.aspnetcore.app.runtime.win-x64.10.0.4.nupkg.sha512"
+    "C:\\Users\\secun\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.119\\stub.system.data.sqlite.core.netstandard.1.0.119.nupkg.sha512",
+    "C:\\Users\\secun\\.nuget\\packages\\system.data.sqlite.core\\1.0.119\\system.data.sqlite.core.1.0.119.nupkg.sha512",
+    "C:\\Users\\secun\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
+    "C:\\Users\\secun\\.nuget\\packages\\taskscheduler\\2.12.2\\taskscheduler.2.12.2.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,15 +1,18 @@
 using System.IO.Compression;
 
 namespace RFBAutomaticDataDownloader.Helpers;
-public class Decompresser
+public class Decompresser : IDisposable
 {
-    public static string Decompress(string file)
+    private static readonly string outputPath = DirectoryHelper.CreateBaseDirectory("decompressed");
+    public string Decompress(string file)
     {
-        string outputPath = DirectoryHelper.CreateBaseDirectory("decompressed");
+        ZipFile.ExtractToDirectory(file, outputPath, overwriteFiles: true);
+        return Directory.GetFiles(outputPath)[0];
+    }
+    public void Dispose()
+    {
         string[] files = Directory.GetFiles(outputPath);
         foreach(var f in files)
             File.Delete(f);
-        ZipFile.ExtractToDirectory(file, outputPath, overwriteFiles: true);
-        return Directory.GetFiles(outputPath)[0];
     }
 }

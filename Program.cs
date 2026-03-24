@@ -43,15 +43,14 @@ public class Program
         }
         Logger.CreateLog(LogType.Sucesso, "Download Completo.");
         
-        /*Console.WriteLine("Extraindo arquivo...");
-        string decompressed = Decompresser.Decompress(downloadedFile);
-        Console.WriteLine("Extração completa.");
+        Logger.CreateLog(LogType.Sucesso, "Extraindo arquivo...");
+        using var extractor = new Decompresser();
+        string decompressed = extractor.Decompress(downloadedFile);
+        Logger.CreateLog(LogType.Sucesso, "Extração completa.");
 
-        Console.WriteLine("Copiando arquivo para o servidor...");
-        var output = Path.Combine(AppConfig.DatabasePath, Path.GetFileName(downloadedFile));
-        File.Copy(downloadedFile, output, true);
-        File.Delete(downloadedFile);
-        Console.WriteLine("Copia realizada com sucesso.");*/
+        Logger.CreateLog(LogType.Sucesso, "Criando Banco de Dados.");
+        DbManager.ParseDatabase(decompressed);
+        Logger.CreateLog(LogType.Sucesso, "Banco de Dados criado com sucesso.");
     }
     
 }
